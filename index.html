@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evree — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #fafbfc;
+    --surface: #ffffff;
+    --text: #1a2332;
+    --text-muted: #5a6478;
+    --accent: #3b6cf6;
+    --gold: #c9a455;
+    --border: #e6eaf0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 2rem 1rem;
+    line-height: 1.65;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--surface);
+    padding: 2.5rem 2.25rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    color: var(--text);
+  }
+  .lang-toggle {
+    display: flex;
+    gap: 0.25rem;
+    background: var(--bg);
+    padding: 0.25rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .lang-toggle button {
+    background: transparent;
+    border: none;
+    padding: 0.4rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: all 0.15s ease;
+  }
+  .lang-toggle button.active {
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  h2 {
+    color: var(--text);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  p, ul {
+    color: var(--text);
+    margin: 0.75rem 0;
+  }
+  ul {
+    padding-inline-start: 1.5rem;
+  }
+  li {
+    margin: 0.35rem 0;
+  }
+  .updated {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+  .summary {
+    background: linear-gradient(135deg, rgba(59,108,246,0.06), rgba(201,164,85,0.05));
+    border-inline-start: 3px solid var(--gold);
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+  .summary p {
+    margin: 0;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  /* Hebrew RTL */
+  [dir="rtl"] {
+    text-align: right;
+  }
+  [dir="rtl"] .container {
+    direction: rtl;
+  }
+  /* Hide one language at a time */
+  .content { display: none; }
+  .content.active { display: block; }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1421;
+      --surface: #161e2e;
+      --text: #e8ecf3;
+      --text-muted: #8a94a8;
+      --accent: #6b8df6;
+      --gold: #d4b06a;
+      --border: #232c3f;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1 id="page-title">Evree</h1>
+    <div class="lang-toggle">
+      <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+      <button id="btn-he" onclick="setLang('he')">עברית</button>
+    </div>
+  </header>
+
+  <!-- ENGLISH -->
+  <div id="content-en" class="content active">
+    <h1 style="font-size:2rem; margin-bottom:0.25rem;">Privacy Policy</h1>
+    <p class="updated">Last updated: April 28, 2026</p>
+
+    <p>This Privacy Policy describes how the Evree mobile application ("Evree", "we", "the app") handles information when you use it. Your privacy is fundamental to how Evree is designed.</p>
+
+    <div class="summary">
+      <p><strong>The short version.</strong> Evree does not collect, store, transmit, or share any personal data. Everything happens on your device. We have no servers, no accounts, no analytics, and no advertising. Your information stays with you.</p>
+    </div>
+
+    <h2>Location Data</h2>
+    <p>Evree requests access to your device's location ("When In Use") solely to calculate accurate zmanim (Jewish prayer times) for your current position. Zmanim such as sunrise, sunset, candle lighting, and Havdalah depend on your geographic coordinates.</p>
+    <p>Your location is:</p>
+    <ul>
+      <li>Used only on your device for local calculation</li>
+      <li>Never transmitted to us, to any server, or to any third party</li>
+      <li>Never stored beyond what your device's operating system temporarily caches for the app</li>
+      <li>Not linked to your identity or any account</li>
+    </ul>
+    <p>You can deny or revoke location access at any time through your device's Settings. If location is unavailable, Evree may not be able to calculate zmanim until access is restored.</p>
+
+    <h2>Notifications</h2>
+    <p>If you grant notification permission, Evree schedules local notifications on your device for upcoming Shabbat, holidays, fast days, yahrzeits, and personal milestones you have added. These notifications are scheduled and delivered entirely by your device — they do not pass through any server, and we cannot see whether or when they fire.</p>
+
+    <h2>Data You Enter Into the App</h2>
+    <p>Information you enter — yahrzeits, personal Jewish milestones, and any other custom entries — is stored locally on your device. This information is never transmitted off your device by Evree. If you delete the app, this information is removed with it.</p>
+
+    <h2>Analytics, Tracking, and Advertising</h2>
+    <p>Evree contains no analytics tools, no tracking, and no advertising. We do not measure how you use the app, what features you tap, or how often you open it. We do not share data with advertisers, marketers, or analytics providers.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>Evree uses the open-source KosherSwift library to perform Jewish calendar calculations. KosherSwift runs entirely on your device and does not send any data anywhere.</p>
+    <p>Evree does not integrate with any other third-party service.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Evree does not knowingly collect any data from anyone, including children. The app is appropriate for all ages.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this policy ever changes — for example, if a future version of Evree adds optional features that involve different data handling — we will update this page and update the "Last updated" date at the top. Material changes will also be communicated through the App Store update notes.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this policy or about how Evree handles your data, please contact:</p>
+    <p><a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+
+    <footer>
+      This privacy policy applies only to the Evree iOS application.
+    </footer>
+  </div>
+
+  <!-- HEBREW -->
+  <div id="content-he" class="content" dir="rtl" lang="he">
+    <h1 style="font-size:2rem; margin-bottom:0.25rem;">מדיניות פרטיות</h1>
+    <p class="updated">עודכן לאחרונה: 28 באפריל 2026</p>
+
+    <p>מסמך זה מתאר כיצד אפליקציית עברי ("עברי", "האפליקציה", "אנחנו") מטפלת במידע כשאתם משתמשים בה. הפרטיות שלכם היא ערך יסוד בעיצוב של עברי.</p>
+
+    <div class="summary">
+      <p><strong>בקצרה.</strong> עברי לא אוסף, לא שומר, לא מעביר ולא משתף שום מידע אישי. הכל קורה במכשיר שלכם. אין לנו שרתים, אין חשבונות משתמש, אין כלי מדידה ואין פרסומות. המידע שלכם נשאר אצלכם.</p>
+    </div>
+
+    <h2>מידע מיקום</h2>
+    <p>עברי מבקש גישה למיקום המכשיר שלכם ("בזמן שימוש") במטרה יחידה — לחשב זמני תפילה מדויקים למיקום הנוכחי שלכם. זמנים כמו הנץ החמה, שקיעה, הדלקת נרות וצאת שבת תלויים בקואורדינטות הגיאוגרפיות שלכם.</p>
+    <p>המיקום שלכם:</p>
+    <ul>
+      <li>בשימוש רק במכשיר שלכם לחישוב מקומי</li>
+      <li>לעולם לא נשלח אלינו, לאף שרת, או לצד שלישי כלשהו</li>
+      <li>לא נשמר מעבר למה שמערכת ההפעלה של המכשיר שומרת באופן זמני</li>
+      <li>לא מקושר לזהות שלכם או לחשבון כלשהו</li>
+    </ul>
+    <p>ניתן לסרב או לבטל את הגישה למיקום בכל עת דרך הגדרות המכשיר. אם המיקום אינו זמין, עברי לא יוכל לחשב זמנים עד שהגישה תשוחזר.</p>
+
+    <h2>התראות</h2>
+    <p>אם תאשרו הרשאת התראות, עברי מתזמן התראות מקומיות במכשיר שלכם על שבתות, חגים, צומות, יארצייטים ואירועים אישיים שהוספתם. ההתראות מתוזמנות ונשלחות לחלוטין על ידי המכשיר שלכם — הן לא עוברות דרך שום שרת, ואין לנו דרך לראות אם או מתי הן מופעלות.</p>
+
+    <h2>מידע שאתם מזינים לאפליקציה</h2>
+    <p>מידע שאתם מזינים — יארצייטים, אירועים יהודיים אישיים וכל רשומה אחרת — נשמר באופן מקומי במכשיר שלכם בלבד. המידע הזה לעולם לא מועבר על ידי עברי מחוץ למכשיר שלכם. אם תסירו את האפליקציה, המידע ימחק יחד איתה.</p>
+
+    <h2>מדידה, מעקב ופרסום</h2>
+    <p>עברי לא כולל כלי מדידה, מעקב או פרסום. אנחנו לא מודדים איך אתם משתמשים באפליקציה, באילו תכונות אתם משתמשים, או באיזו תדירות אתם פותחים אותה. אנחנו לא משתפים מידע עם מפרסמים, משווקים או ספקי מדידה.</p>
+
+    <h2>שירותים של צד שלישי</h2>
+    <p>עברי משתמש בספרייה בקוד פתוח KosherSwift לביצוע חישובים של לוח השנה העברי. KosherSwift רצה לחלוטין במכשיר שלכם ולא שולחת מידע לשום מקום.</p>
+    <p>עברי לא משתלב עם שירות צד שלישי אחר.</p>
+
+    <h2>פרטיות של ילדים</h2>
+    <p>עברי לא אוסף ביודעין שום מידע מאף אחד, כולל ילדים. האפליקציה מתאימה לכל הגילים.</p>
+
+    <h2>שינויים במדיניות</h2>
+    <p>אם המדיניות תשתנה אי פעם — למשל, אם גרסה עתידית של עברי תוסיף תכונות אופציונליות שמערבות טיפול שונה במידע — נעדכן את הדף הזה ואת התאריך "עודכן לאחרונה" בראש העמוד. שינויים מהותיים גם יועברו דרך עדכוני האפליקציה ב-App Store.</p>
+
+    <h2>יצירת קשר</h2>
+    <p>אם יש לכם שאלות לגבי המדיניות הזו או לגבי איך עברי מטפל במידע שלכם, צרו איתנו קשר:</p>
+    <p><a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+
+    <footer>
+      מדיניות פרטיות זו חלה רק על אפליקציית עברי ל-iOS.
+    </footer>
+  </div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('content-en').classList.toggle('active', lang === 'en');
+    document.getElementById('content-he').classList.toggle('active', lang === 'he');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-he').classList.toggle('active', lang === 'he');
+    document.documentElement.lang = lang;
+  }
+</script>
+</body>
+</html>
